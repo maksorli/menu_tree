@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Пункт 1</title>
+</head>
+<body>
+    <h1> Это пунтк 1, url задан явно </h1>
+    {% extends 'base.html' %}
+
+    {% block content %}
+    <h1>{{ menu_item.name }}</h1>
+    <p>Это страница для пункта меню "{{ menu_item.name }}".</p>
+    {% endblock %}
+
+
+
+
+
+   
+</body>
+</html>

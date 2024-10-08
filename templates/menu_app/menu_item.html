@@ -3,11 +3,13 @@
     <a href="{{ item.get_absolute_url }}" {% if item.get_absolute_url == current_path %}class="active"{% endif %}>
         {{ item.name }}
     </a>
-    {% if item.children_items %}
-        <ul>
-            {% for child in item.children_items %}
-                {% include 'menu_app/menu_item.html' with item=child current_path=current_path %}
-            {% endfor %}
-        </ul>
+    {% if item.id in open_items %}
+        {% if item.children_items %}
+            <ul>
+                {% for child in item.children_items %}
+                    {% include 'menu_app/menu_item.html' with item=child current_path=current_path open_items=open_items %}
+                {% endfor %}
+            </ul>
+        {% endif %}
     {% endif %}
 </li>

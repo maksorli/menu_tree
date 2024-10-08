@@ -8,8 +8,6 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
-# Копируем весь проект в контейнер
 COPY . .
 
-# Запускаем сервер
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
