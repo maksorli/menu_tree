@@ -1,4 +1,5 @@
-# Django Tree Menu App![Python](https://img.shields.io/badge/Python-3.10-blue?style=flat&logo=python)![Django](https://img.shields.io/badge/Django-5.1.1-green)![Docker](https://img.shields.io/badge/Docker-20.10-blue?style=flat&logo=docker)![Nginx Status](https://img.shields.io/badge/Nginx-active-brightgreen?logo=nginx&logoColor=white)![Gunicorn Status](https://img.shields.io/badge/Gunicorn-active-brightgreen?logo=gunicorn&logoColor=white)
+# Django Tree Menu App
+![Python](https://img.shields.io/badge/Python-3.10-blue?style=flat&logo=python)![Django](https://img.shields.io/badge/Django-5.1.1-green)![Docker](https://img.shields.io/badge/Docker-20.10-blue?style=flat&logo=docker)![Nginx Status](https://img.shields.io/badge/Nginx-active-brightgreen?logo=nginx&logoColor=white)![Gunicorn Status](https://img.shields.io/badge/Gunicorn-active-brightgreen?logo=gunicorn&logoColor=white)
 
 ## Описание проекта
 Проект доступен по адресу http://uptrader.sycorax.tech/
