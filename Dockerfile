@@ -8,6 +8,11 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
+# Установка gunicorn
+RUN pip install gunicorn
+
+# Копируем исходный код приложения
 COPY . .
 
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+# Команда для запуска gunicorn
+CMD ["gunicorn", "--workers=3", "--bind=0.0.0.0:8002", "menu_tree_project.wsgi:application"]
