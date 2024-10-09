@@ -9,4 +9,4 @@ RUN pip install gunicorn
 
 COPY . .
 
-CMD ["gunicorn", "--workers=3", "--bind=0.0.0.0:8002", "menu_tree_project.wsgi:application"]
+CMD ["gunicorn", "--workers=3", "--bind=0.0.0.0:8000", "menu_tree_project.wsgi:application"]
