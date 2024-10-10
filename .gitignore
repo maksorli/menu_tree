@@ -1,5 +1,8 @@
 /venv/
+/staticfiles/
 __pycache__/
 docker-compose.prod.yml
 Dockerfile.prod
 staticfiles_backup
+menu_tree.code-workspace
+ 

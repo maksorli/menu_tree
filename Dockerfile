@@ -10,7 +10,7 @@ RUN pip install gunicorn
 
 COPY . .
 
-RUN python manage.py collectstatic --noinput
 
 
-CMD ["gunicorn", "--workers=3", "--bind=0.0.0.0:8002", "menu_tree_project.wsgi:application"]
+CMD ["sh", "-c", "python manage.py collectstatic --noinput && gunicorn --workers=3 --bind=0.0.0.0:8002 menu_tree_project.wsgi:application"]
+
