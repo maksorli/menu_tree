@@ -2,3 +2,4 @@
 __pycache__/
 docker-compose.prod.yml
 Dockerfile.prod
+staticfiles_backup
